@@ -14,7 +14,7 @@ class GameScreen extends StatefulWidget {
 
 class _GameState extends State<GameScreen> {
 
-  var size = 23.0;
+  var size = 20.0;
 
 
 
@@ -31,41 +31,64 @@ class _GameState extends State<GameScreen> {
           children: [
             Image.asset("assets/images/game.png"),
             Container(
-              padding: EdgeInsets.only(top: size*1),
+              padding: EdgeInsets.only(top: size*3),
               child: Stack(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(left: size,top: size*6),
+                    margin: EdgeInsets.only(left: size*3,top: size*6),
                     child: Column(
                       children: [
-                        getLabel("4"),
-                        getText(3,0),
-                        getText(3,1),
-                        getText(3,2),
-                        getText(3,3),
-                        getText(3,4),
-                        getText(3,5),
+                        getLabel("13"),
+                        getText(12,0),
+                        getText(12,1),
+                        getText(12,2),
+                        getText(12,3),
+                        getText(12,4),
+                        getText(12,5),
                       ],
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 0,top: size*8),
+                    margin: EdgeInsets.only(left: size,top: size*9),
                     child: Row(
                       children: [
-                        getLabel("1"),
+                        getLabel("6"),
+                        getText(5,0),
                         SizedBox(width: size,),
-                        getText(0,1),
-                        getText(0,2),
-                        getText(0,3),
+                        getText(5,2),
+                        getText(5,3),
+                        getText(5,4),
                       ],
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: size+size*2,top: size*10),
+                    margin: EdgeInsets.only(left: 0,top: size*12),
+                    child: Row(
+                      children: [
+                        getLabel("2"),
+                        getText(1,0),
+                        getText(1,1),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: size*6,top: size*5),
+                    child: Column(
+                      children: [
+                        getLabel("5"),
+                        getText(4,0),
+                        getText(4,1),
+                        getText(4,2),
+                        getText(4,3),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: size*5,top: size*6),
                     child: Row(
                       children: [
                         getLabel("3"),
-                        getText(2,0),
+                        SizedBox(width: size,),
                         getText(2,1),
                         getText(2,2),
                         getText(2,3),
@@ -74,7 +97,48 @@ class _GameState extends State<GameScreen> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: size+size*2,top: size*12),
+                    margin: EdgeInsets.only(left: size*11,top: size*3),
+                    child: Column(
+                      children: [
+                        getLabel("4"),
+                        getText(3,0),
+                        getText(3,1),
+                        getText(3,2),
+                        getText(3,3),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: size*7,top: size*4),
+                    child: Row(
+                      children: [
+                        getLabel("14"),
+                        getText(13,0),
+                        getText(13,1),
+                        getText(13,2),
+                        SizedBox(width: size,),
+                        getText(13,4),
+                        getText(13,5),
+                        getText(13,6),
+                        SizedBox(width: size,),
+                        getText(13,8),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: size*15,top: size),
+                    child: Column(
+                      children: [
+                        getLabel("9"),
+                        getText(8,0),
+                        getText(8,1),
+                        getText(8,2),
+                        getText(8,3),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: size*13,top: size*6),
                     child: Row(
                       children: [
                         getLabel("7"),
@@ -86,84 +150,23 @@ class _GameState extends State<GameScreen> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: size+size*6,top: size*7),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        getLabel("5"),
-                        Container(
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              getLabel("6"),
-                              getText(5,0)
-                            ],
-                          ),
-                        ),
-                        getText(5,1),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(left: size+size*8,top: size*8),
-                    child: Row(
-                      children: [
-                        getText(0,1),
-                        getText(0,1),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(left: size+size*9,top: size*3),
+                    margin: EdgeInsets.only(left: size*18,top: size*2),
                     child: Column(
                       children: [
                         getLabel("8"),
                         getText(7,0),
                         getText(7,1),
-                        SizedBox(height: size,),
+                        getText(7,2),
                         getText(7,3),
-                        SizedBox(height: size,),
-                        getText(7,4),
-                        getText(7,5),
-                        SizedBox(height: size,),
-                        getText(7,7),
-                        SizedBox(height: size,),
-                        getText(7,9),
                       ],
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: size+size*8,top: size*6),
-                    child: Row(
-                      children: [
-                        getLabel("9"),
-                        getText(8,0),
-                        getText(8,1),
-                        getText(8,2),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(left: size+size*12,top: 0),
-                    child: Column(
-                      children: [
-                        getLabel("10"),
-                        getText(9,0),
-                        SizedBox(height: size,),
-                        getText(9,2),
-                        getText(9,3),
-                        getText(9,4),
-                        getText(9,5),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(left: size+size*11,top: size*2),
+                    margin: EdgeInsets.only(left: size*17,top: size*4),
                     child: Row(
                       children: [
                         getLabel("11"),
-                        getText(10,0),
+                        SizedBox(width: size,),
                         getText(10,1),
                         getText(10,2),
                         getText(10,3),
@@ -175,61 +178,48 @@ class _GameState extends State<GameScreen> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: size+size*16,top: 0),
+                    margin: EdgeInsets.only(left: size*22,top: size*2),
                     child: Column(
                       children: [
-                        getLabel("14"),
-                        getText(13,0),
-                        getText(13,1),
-                        getText(13,2),
-                        getText(13,3),
-                        getText(13,4),
-                        getText(13,5),
+                        getLabel("10"),
+                        getText(9,0),
+                        getText(9,1),
+                        getText(9,2),
+                        SizedBox(height: size,),
+                        getText(9,4),
+                        SizedBox(height: size,),
+                        getText(9,6),
                       ],
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: size+size*8,top: size*11),
+                    margin: EdgeInsets.only(left: size*20,top: size*6),
+                    child: Row(
+                      children: [
+                        getLabel("1"),
+                        getText(0,0),
+                        getText(0,1),
+                        getText(0,2),
+                        getText(0,3),
+                        getText(0,4),
+                        getText(0,5),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: size*20,top: size*8),
                     child: Row(
                       children: [
                         getLabel("12"),
                         getText(11,0),
                         getText(11,1),
-                        SizedBox(width: size,),
+                        getText(11,2),
                         getText(11,3),
                         getText(11,4),
                         getText(11,5),
                       ],
                     ),
                   ),
-                  Container(
-                    margin: EdgeInsets.only(left: size+size*11,top: size*10),
-                    child: Column(
-                      children: [
-                        getLabel("13"),
-                        getText(12,0),
-                        getText(12,1),
-                        getText(12,2),
-                        getText(12,3),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(left: size+size*4,top: size*6),
-                    child: Column(
-                      children: [
-                        getLabel("2"),
-                        getText(1,0),
-                        getText(1,1),
-                        getText(1,2),
-                        SizedBox(height: size,),
-                        getText(1,4),
-                        SizedBox(height: size,),
-                        getText(1,6),
-                      ],
-                    ),
-                  ),
-
                 ],
               ),
             )
@@ -284,21 +274,20 @@ class _GameState extends State<GameScreen> {
     ],
   ];
   var words = [
-    "Poker",
-    "Demeter",
-    "Vegas",
-    "Cronus",
-
-    "Poker",
-    "Pos",
-    "Vegas",
-    "Ares",
-    "Tyche",
-    "Demeter",
-    "Roulette",
-    "Hestia",
-    "Cronus",
-    "Blackjack",
+    "Hermes", //1
+    "Pos", //2
+    "Athena", //3
+    "Crap", //4
+    "Aphr", //5
+    "Poker", //6
+    "Vegas", //7
+    "Ares", //8
+    "Tyche", //9
+    "Demeter", //10
+    "Roulette", //11
+    "Hestia", // 12
+    "Cronus", //13
+    "Blackjack", //14
   ];
 
   Widget getText(int i1, int i2) {
@@ -314,10 +303,12 @@ class _GameState extends State<GameScreen> {
         controller: controlls[i1][i2],
         onChanged: (s) {
           print("$s ${words[i1][i2]}");
-          if(s!=words[i1][i2]) {
+          if(s.toLowerCase()!=words[i1][i2].toLowerCase()) {
             setState(() {
               controlls[i1][i2].text = "";
             });
+          } else {
+            controlls[i1][i2].text = words[i1][i2].toUpperCase();
           }
         },
         maxLines: 1,
@@ -325,7 +316,7 @@ class _GameState extends State<GameScreen> {
         textAlign: TextAlign.center,
         showCursor: false,
         style: TextStyle(
-            fontSize: 14, color: Colors.black,
+            fontSize: 12, color: Colors.black,
         ),
         decoration: InputDecoration(
             counterText: "",

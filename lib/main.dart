@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:godsofolympus/game.dart';
+import 'package:godsofolympus/loader.dart';
+import 'package:godsofolympus/menu.dart';
+import 'package:godsofolympus/policy.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,7 +22,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (c) => GameScreen()
+        '/': (c) => LoaderScreen(),
+        '/game': (c) => GameScreen(),
+        '/menu': (c) => MenuScreen(),
+        '/policy': (c) => WebScreen()
       },
     );
   }
